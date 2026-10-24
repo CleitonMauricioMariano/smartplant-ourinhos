@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Surfaces & Backgrounds */
+  --bg-canvas: #07090E;
+  --bg-primary: #0B0E14;
+  --bg-card: rgba(19, 24, 32, 0.78);
+  --bg-card-solid: #131820;
+  --bg-elevated: rgba(26, 32, 44, 0.85);
+
+  /* Glass & Borders */
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --border-highlight: rgba(0, 230, 118, 0.35);
+
+  /* Typography */
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  /* Telemetry Semantics */
+  --neon-green: #00E676;
+  --neon-amber: #FFB300;
+  --neon-orange: #FF6D00;
+  --neon-crimson: #FF1744;
+  --cyber-blue: #2979FF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Tabular nums for industrial precision */
+.font-mono,
+.tabular-nums,
+[data-tabular="true"] {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07090E;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 230, 118, 0.4);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(19, 24, 32, 0.78);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(0, 230, 118, 0.35);
+  box-shadow: 0 0 20px rgba(0, 230, 118, 0.12);
+}
+
+/* Glow effects */
+.glow-green {
+  text-shadow: 0 0 14px rgba(0, 230, 118, 0.5);
+}
+
+.glow-crimson {
+  text-shadow: 0 0 14px rgba(255, 23, 68, 0.5);
+}

@@ -1,0 +1,12 @@
+quero criar um projeto no antigravity para replicar com meus alunos. trata-se do EduScore, uma plataforma web que mescla conhecimentos  de scrapper, agentes e leitura de dados de planilhas. 
+
+como fonte de dados RAG utilizaremos a base de microdados do enem 2025 ela estará disposta no nosso projeto na subpasta data\microdados_enem_2025, lá temos as subpastas DADOS, DICIONÁRIO e INPUTS; em DADOS temos os arquivos .csv que serão nossas fontes do RAG, em DICIONÁRIO temos uma planilha .xlsx com a explicação do conteúdo e em INPUTS temos alguns programas já disponibilizados para leitura dos arquivos .csv (prioritariamente utilize eles sempre que possível). importante frisar o volume massivo de dados nesses arquivos. precisamos de uma forma de le-los rapidamente e ter acesso rápido sempre que necessário.
+
+nosso objetivo é um sistema web onde teremos uma interface unica, que traz a informação dos arquivos importados (quais arquivos e quantidade de registros), sendo importante frisar que passam de 4 milhões de registros. assim exiba o carregamento e a % de carregamento efetivo.
+
+- abaixo teremos a visualização de filtros por região, estados, microregiões e municipios. ao selecionar uma região, estado, microregião ou municipio, teremos o resultado nacional, os resultados do filtro (como média) e as escolas e alunos de cada escola dentro do filtro. as escolas e alunos de cada escola aparecem como listas ao clicar em cada uma delas podemos ver os detalhes (nome da escola, endereço, telefone, quantidade de alunos, média de notas por matéria e média geral). importante é imprescindivel aparecer o nome da escola
+
+tudo isso deve ser desenvolvido em uma estrutura clean, ligth, moderna e atraente, alem claro de responsiva e utilizar as principais stacks atuais. utilize clean code e mobile first.
+quero todo o plano de implementação muito bem desenvolvido.
+
+a partir desse pedido, assuma o papel de um engenheiro de IA senior e utilizando uma visão de SDD (Spec-Driven Development) gere de forma orquestrada, pensando na utilização do Antigravity com Gemini 3.8 flash high como ferramenta de senvolvimento, o conteudo de dois arquivos 'projeto.md' que será o guia oficial a ser executado no Antigravity e 'design.md' que será o guia de UI/UX.
